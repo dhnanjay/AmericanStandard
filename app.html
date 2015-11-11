@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.js"></script>
+
+  <script src="script.js"></script>
+
+</head>
+<body>
+<div data-role="page" data-control-title="Home" id="page1" style="background-color: #ffffff">
+    <!-- style="background: url('http://ekom.com.br/images/parallax-1.jpg') no-repeat"> -->
+    <div data-theme="h" data-role="header">
+        <span class="ui-title"></span>
+        <img src="img/slogo.png" class="ui-btn-right" />
+    </div>
+    <div role="main" class="ui-content">
+        <div style=" text-align:center" data-controltype="image" id="logo">
+            <img style="width: 80%; height: 150px" src="img/americanstandard-logo.gif">
+                 <!-- src="http://bestdrainage.ca/images/americanstandard-logo.gif"> -->
+        </div>
+        <div class="ui-field-contain Inputbox" data-controltype="textinput">
+            <input name="" id="usrname" placeholder="Username" value="" type="text">
+        </div>
+        <div class="ui-field-contain Inputbox" data-controltype="textinput">
+            <input name="" id="pswd" placeholder="Password" value="" type="password">
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div class="ui-field-contain" data-controltype="toggleswitch">
+                            <select name="toggleswitch2" id="toggleswitch2" data-theme="h" data-role="slider"
+                            data-mini="true">
+                                <option value="off">
+                                    No
+                                </option>
+                                <option value="on">
+                                    Yes
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div data-controltype="textblock">
+                    <p>
+                        <span style="color: #059;" data-mce-style="color: #059;">
+                            <strong>
+                                <span style="font-size: small;" data-mce-style="font-size: small;">
+                                    Remember Me
+                                </span>
+                            </strong>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="ui-block-c">
+            </div>
+        </div>
+        <a id="loginbtn" data-transition="turn" href="#page2" data-icon="arrow-r"
+        data-iconpos="right" class="ui-btn ui-btn-h ui-icon-arrow-r ui-btn-icon-right Btns">
+            Login
+        </a>
+        <div>
+            <a id="helpLink" href="#page5" data-transition="flip" class="link">
+                Help
+            </a>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="jobList" id="page2" style="background-color: #ffffff">
+    <!-- style="background: url('http://ekom.com.br/images/parallax-1.jpg') repeat"> -->
+    <div data-theme="a" data-role="header">
+        <h1 id="pg2" class="ui-title hdr"></h1>
+        <img src="img/slogo.png" class="ui-btn-right" />
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <h3 style="text-align: center;" data-mce-style="text-align: center;">
+                <span style="color: #059;" data-mce-style="color: #059;">
+                    <b>
+                        Pending Jobs
+                    </b>
+                </span>
+            </h3>
+        </div>
+        <ul id="listid" data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider"> November 11, 2015 <span class="ui-li-count">3</span></li>
+            <li data-theme="a">
+                <a href="#page3" data-transition="slide">
+                    <h3>Hyatt International</h3>
+                    <p><strong>Service Ticket: 300012231</strong></p>
+                    <p>Issue with the Faucets and Bidets.</p>
+                    <p class="ui-li-aside">Priority:<strong>High</strong></p>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page3" data-transition="slide">
+                    <h3>Hilton Hotels & Resorts</h3>
+                    <p><strong>Service Ticket: 300055231</strong></p>
+                    <p>Fixtures and Pipe Installation</p>
+                    <p class="ui-li-aside">Priority:<strong>High</strong></p>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page3" data-transition="slide">
+                    <h3>NYCHA - New York</h3>
+                    <p><strong>Service Ticket: 300055266</strong></p>
+                    <p>AC Installation</p>
+                    <p class="ui-li-aside">Priority: Medium</p>
+                </a>
+            </li>
+            <li data-role="list-divider"> November 10, 2015 <span class="ui-li-count">2</span></li>
+            <li data-theme="a">
+                <a href="#page3" data-transition="slide">
+                    <h3>Meadowlands Hospital</h3>
+                    <p><strong>Service Ticket: 300019991</strong></p>
+                    <p>Dripping Facuets.</p>
+                    <p class="ui-li-aside">Priority:<strong>High</strong></p>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page3" data-transition="turn">
+                    <h3>Hoboken Housing Rentals</h3>
+                    <p><strong>Service Ticket: 300055231</strong></p>
+                    <p>Fixtures and Pipe Installation</p>
+                    <p class="ui-li-aside">Priority:Low</p>
+                </a>
+            </li>
+            <li data-role="list-divider"> November 09, 2015 <span class="ui-li-count">1</span></li>
+            <li data-theme="a">
+                <a href="#page3" data-transition="slide">
+                    <h3>Trump Towers</h3>
+                    <p><strong>Service Ticket: 300019922</strong></p>
+                    <p>Faulty Installation.</p>
+                    <p class="ui-li-aside">Priority: Medium</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="h" data-role="footer" data-position="fixed">
+        <h3 id="ftr2" class="ui-title footer">
+        </h3>
+    </div>
+</div>
+<div data-role="page" data-control-title="stInfo" id="page3" style="background-color: #ffffff">
+     <!-- style="background: url('http://ekom.com.br/images/parallax-1.jpg') repeat"> -->
+    <div id="pg3" data-theme="a" data-role="header" class="hdr">
+        <span class="ui-title"></span>
+        <a id="backbtn1" data-inline="true" data-rel="back" href="#page2" data-icon="back"
+        data-iconpos="left" class="ui-btn  ui-icon-back ui-btn-icon-left back">
+        </a>
+        <img src="img/slogo.png" class="ui-btn-right" />
+    </div>
+    <div role="main" class="ui-content">
+     <!--   <div style="" data-controltype="image">
+            <img style="width: 40%; height: 65px" src="http://img01.thedrum.com/s3fs-public/drum_basic_article/120151/main_images/hyatt-logo_0.jpg">
+        </div> -->
+        <!-- -->
+        <ul id="custinfo" data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider"> Customer Name </li>
+            <li data-theme="a">
+                <h3>Hyatt International</h3>
+                <p>Address : 1 Sharp Plaza, Mahwah, NJ 07446</p>
+                <p class="ui-li-aside"><img style="width: 25%; height: 55px" src="img/hyatt-logo.jpg"></p>
+                                            <!--src="http://img01.thedrum.com/s3fs-public/drum_basic_article/120151/main_images/hyatt-logo_0.jpg"></p> -->
+            </li>
+            <li data-role="list-divider"> Service Ticket </li>
+            <li data-theme="a">
+                <h3>300012231</h3>
+                <p>Description : Faucet and Bidet Issue</p>
+            </li>
+            <li data-role="list-divider"> Product Information </li>
+            <li data-theme="a">
+                <h3>Model No. LX121353 </h3>
+            </li>
+            <li data-role="list-divider"> Customer Concern </li>
+            <li data-theme="a">
+                <p> Multiple leaking faucets and bidets.. </p>
+            </li>
+
+        </ul>
+
+        <!-- -->
+        <a id="confBtn" data-transition="pop" href="#page4" class="ui-btn ">
+            Confirm
+        </a>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3 class="ui-title">
+        </h3>
+    </div>
+</div>
+<div data-role="page" data-control-title="capData" id="page4" style="background: url('http://ekom.com.br/images/parallax-1.jpg') repeat">
+    <div data-theme="a" data-role="header" class="hdr">
+        <span class="ui-title"></span>
+        <a id="backbtn2" data-rel="back" href="#page4" data-icon="back" data-iconpos="left"
+        class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left back">
+        </a>
+        <img src="img/slogo.png" class="ui-btn-right" />
+    </div>
+    <div role="main" class="ui-content">
+        <div class="ui-field-contain" data-controltype="dateinput">
+            <label for="dateip">
+                Date
+            </label>
+            <input name="" id="dateip" placeholder="" value="" type="date">
+        </div>
+        <div class="ui-field-contain" data-controltype="textinput">
+            <label for="hoursip">
+                Hours
+            </label>
+            <input name="" id="hoursip" placeholder="Enter Hours" value="" type="time">
+        </div>
+        <div class="ui-field-contain" data-controltype="selectmenu">
+            <label for="statusdd">
+                Status
+            </label>
+            <select id="statusdd" name="">
+                <option value="E0001">
+                    Open
+                </option>
+                <option value="E0002">
+                    In Process
+                </option>
+                <option value="E0006">
+                    Closed with Cust. Satisfaction
+                </option>
+                <option value="E0007">
+                    Closed without Cust. Satisfaction
+                </option>
+            </select>
+        </div>
+        <div id="collapsid" data-role="collapsible-set">
+            <div id="sectionid" data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Products Available
+                </h3>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div data-controltype="textblock">
+                            <p>
+                                <b>
+                                    R120 (3)
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div class="ui-field-contain qnt" data-controltype="textinput">
+                            <input name="" id="textinput4" placeholder="" value="" type="number" data-mini="true">
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div data-controltype="textblock">
+                            <p>
+                                <b>
+                                    Bidet (4)
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div class="ui-field-contain qnt" data-controltype="textinput">
+                            <input name="" id="textinput6" placeholder="" value="" type="number" data-mini="true">
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div data-controltype="textblock">
+                            <p>
+                                <b>
+                                    Faucet (2)
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div class="ui-field-contain qnt" data-controltype="textinput">
+                            <input name="" id="textinput7" placeholder="" value="" type="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-field-contain" data-controltype="textarea">
+            <label for="textarea1">
+                Notes
+            </label>
+            <textarea name="" id="textarea1" placeholder=""></textarea>
+        </div>
+     <!--   <input id="submitBtn" class="show-page-loading-msg" type="submit" value="Submit"> -->
+        <a id="submitBtn" data-transition="pop" href="#page2" class="ui-btn ">
+            Submit
+        </a>
+    </div>
+    <div id="tabBar" data-role="tabbar" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="fade" data-theme="" data-icon="refresh">
+                    Reset
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" data-control-title="Help" id="page5" style="background: url('http://ekom.com.br/images/parallax-1.jpg') repeat">
+    <div data-theme="a" data-role="header">
+        <span class="ui-title"></span>
+        <a id="backbtn3" data-rel="back" data-transition="slide" href="#page1"
+        data-icon="back" data-iconpos="left" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left back">
+        </a>
+        <img src="img/slogo.png" class="ui-btn-right" />
+    </div>
+    <div role="main" class="ui-content">
+        <div class="ui-field-contain" data-controltype="textinput">
+            <label for="useridip">
+                Enter User id
+            </label>
+            <input name="" id="useridip" placeholder="User Id" value="" type="text">
+        </div>
+        <div class="ui-field-contain" data-controltype="textinput">
+            <label for="emailip">
+                Email
+            </label>
+            <input name="" id="emailip" placeholder="Email" value="" type="email">
+        </div>
+        <div class="ui-field-contain" data-controltype="textarea">
+            <label for="textarea2">
+                Comments
+            </label>
+            <textarea name="" id="textarea2" placeholder="Enter your query here.."></textarea>
+        </div>
+        <a id="helpSubmit" data-transition="flip" href="#page1" class="ui-btn ">
+            Submit
+        </a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.ui-header, .ui-footer {
+    border-width: 0px 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+.ui-btn:hover,.html .ui-body-a .ui-btn:hover {
+    background-color: #199914;
+    border-color: #005497;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+ .ui-btn, .ui-li-divider, .ui-btn-h, .ui-icon-arrow-r, .ui-btn-icon-right .Btns {
+    background-color: #278EE1;
+    border-color: #38C;
+    color: #f5f5f5;
+    text-shadow: none;
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited {
+    background-color: #278EE1;
+    border-color: #38C;
+    color: #f5f5f5;
+    text-shadow: none;
+}
+.ui-header {
+    height: 50px;
+    background-color: #278EE1;
+}
+
+.ui-btn-right {
+    top: 0.1em;
+    right: 0.2em;
+}
